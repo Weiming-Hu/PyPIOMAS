@@ -1,5 +1,14 @@
 # PyPIOMAS
 
+<!-- vim-markdown-toc GFM -->
+
+* [Overview](#overview)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Contribution](#contribution)
+
+<!-- vim-markdown-toc -->
+
 ## Overview
 
 This package currently supports
@@ -7,7 +16,7 @@ This package currently supports
 1. downloading the [PIOMAS](http://psc.apl.uw.edu/research/projects/arctic-sea-ice-volume-anomaly/data/model_grid) dataset;
 2. converting scalar fields with a 2-d grid type to an NetCDF format.
 
-This package is written in python 3 by [Weiming Hu](https://weiming-hu.github.io/). The implementation is inspired from the following similar projects:
+This package is written in Python 3 by [Weiming Hu](https://weiming-hu.github.io/). The implementation is inspired from the following similar projects:
 
 1. [Zack Labe's tools](https://github.com/zmlabe/IceVarFigs/tree/master/Scripts/SeaIce)
 2. [Robbie Mallet’s converters](https://github.com/robbiemallett/piomas_bin_reader)
@@ -53,7 +62,7 @@ downloader.download()
 downloader.unzip()
 ```
 
-The original PIOMAS data are hard to work with. Use the following routine to convert them to NetCDF.
+`PyPIOMAS` also provides the functionality to convert the raw data to NetCDF.
 
 ```python
 downloader.to_netcdf('PIOMAS.nc')
@@ -81,6 +90,8 @@ variables:
 		area:coordinates = "x y" ;
 }
 ```
+
+Enjoy your science!
 
 ## Contribution
 
