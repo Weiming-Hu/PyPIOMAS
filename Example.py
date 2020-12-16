@@ -10,7 +10,8 @@
 #         The Pennsylvania State University
 #
 
-from PyPIOMAS import PyPIOMAS
+from PyPIOMAS.PyPIOMAS import PyPIOMAS
+
 
 if __name__ == '__main__':
 

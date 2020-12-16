@@ -14,7 +14,7 @@ import gzip
 import glob
 import shutil
 
-from Functions import *
+from PyPIOMAS.Functions import *
 
 
 class PyPIOMAS:
