@@ -7,7 +7,6 @@ setup(
     author_email='weiming@psu.edu',
     url='https://github.com/Weiming-Hu/PyPIOMAS',
     license='LICENSE',
-    packages=setuptools.find_packages(),
     description='A package for downloading and converting the PIOMAS dataset',
     install_requires=[
         'numpy',

@@ -23,9 +23,12 @@ This package is written in Python 3 by [Weiming Hu](https://weiming-hu.github.io
 
 ## Installation
 
-Install it with git directly from GitHub.
+There are two ways to install the package:
 
-`pip install git+git://github.com/Weiming-Hu/PyPIOMAS.git`
+1. From PyPi: `pip install PyPIOMAS`
+2. From GitHub: `pip install git+git://github.com/Weiming-Hu/PyPIOMAS.git`
+
+Installing from GitHub will guarantee the latest version.
 
 ## Usage
 
