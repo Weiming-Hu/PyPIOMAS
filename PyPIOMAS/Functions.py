@@ -100,7 +100,7 @@ def download_file_url(url, dest_file):
 
     r = requests.get(url, verify=False)
 
-    with open(dest_file, 'wb') as f:
+    with open(os.path.expanduser(dest_file), 'wb') as f:
         f.write(r.content)
 
 
@@ -128,7 +128,7 @@ def convert_to_netcdf_batch(files_in, short_names, years, long_names, units, fil
 
     # Initialize an NetCDF dataset
     ds = xr.Dataset(coords={'x': ('grid', xs), 'y': ('grid', ys)})
-    ds.to_netcdf(file_out, mode='w', format='NETCDF4')
+    ds.to_netcdf(os.path.expanduser(file_out), mode='w', format='NETCDF4')
 
     for file_in, short_name, year, long_name, unit in zip(files_in, short_names, years, long_names, units):
         convert_to_netcdf(file_in, short_name, year, long_name, unit, file_out, ds.grid.size, verbose)
@@ -151,6 +151,9 @@ def convert_to_netcdf(file_in, short_name, year, long_name, unit, file_out, num_
     denoted from http://psc.apl.uw.edu/research/projects/arctic-sea-ice-volume-anomaly/data/model_grid
     :param verbose: Whether to be verbose
     """
+
+    file_in = os.path.expanduser(file_in)
+    file_out = os.path.expanduser(file_out)
 
     # Excluding the following variables due to various reasons
     if short_name in (
@@ -214,6 +217,9 @@ def stack_variables_by_years(file_in, file_out, variable, verbose=True):
     :param variable: The variable to stack
     :param verbose: Whether to be verbose
     """
+
+    file_in = os.path.expanduser(file_in)
+    file_out = os.path.expanduser(file_out)
 
     # Read the NetCDF file
     ds = xr.open_dataset(file_in)

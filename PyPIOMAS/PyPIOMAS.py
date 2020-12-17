@@ -184,6 +184,8 @@ class PyPIOMAS:
         :param stack_years: Whether to also stack variables based on the year information
         """
 
+        file_out = os.path.expanduser(file_out)
+
         if os.path.exists(file_out) and overwrite:
             os.remove(file_out)
 

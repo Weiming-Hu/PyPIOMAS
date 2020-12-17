@@ -1,6 +1,7 @@
 # PyPIOMAS 0.1.2
 
 - Resolved the issue that files were not found 
+- Added file path expansion to all functions
 
 # PyPIOMAS 0.1.1
 
