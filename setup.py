@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='PyPIOMAS',
-    version='0.1.0',
+    version='0.1.1',
     author='Weiming Hu',
     author_email='weiming@psu.edu',
     url='https://github.com/Weiming-Hu/PyPIOMAS',

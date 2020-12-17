@@ -1,0 +1,8 @@
+# PyPIOMAS 0.1.1
+
+- Uploaded to Pypi
+
+# PyPIOMAS 0.1.0
+
+- Initialized the project
+
