@@ -37,7 +37,7 @@ An example is provided in [Example.py](https://github.com/Weiming-Hu/PyPIOMAS/bl
 In a nutshell, you start by defining a downloader.
 
 ```python
-from PyPIOMAS.PyPIOMAS import PyPIOMAS
+from PyPIOMAS import PyPIOMAS
 
 variables = ['area']
 years = [2016, 2017, 2018]
