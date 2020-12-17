@@ -218,7 +218,7 @@ class PyPIOMAS:
                                 long_names=long_names, units=units, file_out=file_out, verbose=self.verbose)
 
         if stack_years:
-            file_tmp = '.tmp'.format(file_out)
+            file_tmp = '{}.tmp'.format(file_out)
 
             if self.verbose:
                 print('Stacking multiple years ...')
