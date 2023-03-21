@@ -14,6 +14,7 @@ setuptools.setup(
         'xarray',
         'netCDF4',
         'scipy',
+        'urllib3',
     ],
 )
 
