@@ -15,6 +15,7 @@ setuptools.setup(
         'netCDF4',
         'scipy',
         'urllib3',
+        'requests',
     ],
 )
 
