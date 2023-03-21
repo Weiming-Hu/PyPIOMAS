@@ -12,6 +12,8 @@ setuptools.setup(
     install_requires=[
         'numpy',
         'xarray',
+        'netCDF4',
+        'scipy',
     ],
 )
 
